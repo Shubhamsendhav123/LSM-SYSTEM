@@ -1,15 +1,24 @@
 
-import { Router } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+
+
+import HomePage from './Pages/HomePage.jsx';
+import AboutUs from './Pages/AboutUs.jsx';
 
 function App() {
   
 
   return (
-    // <Router> 
-    // <h1>radhe radhe</h1>
-    // </Router>
-    <h1>radhe radhe</h1>
+    <>
+     <Routes> 
+    <Route path = "/" element={<HomePage />}></Route>
+    <Route path = "/about" element={<AboutUs />}></Route>
+    </Routes>
+    
+ 
+   
+ </> 
   )
 }
 
